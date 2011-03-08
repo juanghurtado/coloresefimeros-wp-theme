@@ -71,7 +71,11 @@ $file = $guanes[$i]["file"];
 </head>
 <body>
 <div id="wrapper">
-	<h1><a href="<?php echo get_option('home'); ?>" title="Página principal del blog <?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+	<h1>
+		<a href="<?php echo get_option('home'); ?>" title="Página principal del blog <?php bloginfo('name'); ?>">
+			<img src="<?php bloginfo('template_directory'); ?>/images/layout/logo-ce.png" alt="<?php bloginfo('name'); ?>" />
+		</a>
+	</h1>
 	
 	<?php if (!is_404()) { ?>
 	<div id="about">

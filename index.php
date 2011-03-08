@@ -7,18 +7,23 @@
 get_header(); ?>
 
 	<?php if (have_posts()) : ?>
-
+		
+		<div class="hfeed">
 		<?php while (have_posts()) : the_post(); ?>
-			<div id="post-<?php the_ID(); ?>" class="article">
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Enlace permanente al artículo &laquo;<?php the_title(); ?>&raquo;"><?php the_title(); ?></a></h2>
+			<div id="post-<?php the_ID(); ?>" class="article hentry">
+				<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Enlace permanente al artículo &laquo;<?php the_title(); ?>&raquo;"><?php the_title(); ?></a></h2>
 
 				<p class="date">
-					<span class="day"><?php the_time('j') ?></span>
-					<span class="month"><?php the_time('F') ?></span>
-					<span class="year"><?php the_time('Y') ?></span>
+					<abbr class="published" title="<?php the_time('Y-m-d\TH:i:s\Z') ?>">
+						<span class="day"><?php the_time('j') ?></span>
+						<span class="month"><?php the_time('F') ?></span>
+						<span class="year"><?php the_time('Y') ?></span>
+					</abbr>
 				</p>
-
-				<?php the_content('Leer el resto del artículo&hellip;'); ?>
+				
+				<div class="entry-content">
+					<?php the_content('Leer el resto del artículo&hellip;'); ?>
+				</div>
 
 				<ul class="metadata">
 					<li class="categories">Categorías <?php the_category(', ') ?></li>
@@ -26,6 +31,7 @@ get_header(); ?>
 				</ul>
 			</div>
 		<?php endwhile; ?>
+		</div>
 		
 		<?php if ($wp_query->max_num_pages > 1) { ?>
 			<hr class="hide" />
