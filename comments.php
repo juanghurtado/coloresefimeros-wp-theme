@@ -65,21 +65,21 @@
 			<p>
 				<label for="author">
 					Nombre <?php if ($req) echo "<span class=\"required\">(*)</span>"; ?><br />
-					<input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
+					<input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" required="required" />
 				</label>
 			</p>
 	
 			<p>
 				<label for="email">
 					Dirección de correo electrónico <?php if ($req) echo "<span class=\"required\">(*)</span>"; ?><br />
-					<input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
+					<input type="email" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" required="required" />
 				</label>
 			</p>
 	
 			<p>
 				<label for="url">
 					Sitio Web <?php if ($req) echo "<span class=\"required\">(*)</span>"; ?><br />
-					<input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
+					<input type="url" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" required="required" />
 				</label>
 			</p>
 
@@ -88,7 +88,7 @@
 		<p>
 			<label for="comment">
 				Comentario<br />
-				<textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea>
+				<textarea name="comment" id="comment" cols="50" rows="10" tabindex="4" required="required"></textarea>
 			</label>
 		</p>
 
