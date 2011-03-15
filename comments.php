@@ -18,11 +18,11 @@
 <!-- You can start editing here. -->
 <hr class="hide" />
 
-<div id="comments-wrapper">
+<section id="comments-wrapper">
 
 <?php if ( have_comments() ) : ?>
 	<div id="comments">
-		<h3><?php comments_number('No se han escrito comentarios aún', 'Se ha escrito un sólo comentario', 'Se han escrito % comentarios' );?></h3>
+		<h2><?php comments_number('No se han escrito comentarios aún', 'Se ha escrito un sólo comentario', 'Se han escrito % comentarios' );?></h2>
 
 		<ol>
 			<?php foreach ($comments as $comment) : ?>
@@ -49,7 +49,7 @@
 <?php if ( comments_open() ) : ?>
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="comment-form">
-	<h3><?php comment_form_title( 'Deja un comentario', 'Escribe un comentario para el artículo &laquo;%s&raquo;' ); ?></h3>
+	<h2><?php comment_form_title( 'Deja un comentario', 'Escribe un comentario para el artículo &laquo;%s&raquo;' ); ?></h2>
 
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 		<p>Debes estar <a href="<?php echo wp_login_url( get_permalink() ); ?>">logado</a> para escribir un comentario.</p>
@@ -104,4 +104,4 @@
 
 <?php endif; // if you delete this the sky will fall on your head ?>
 
-</div>
+</section>

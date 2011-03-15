@@ -32,7 +32,7 @@ if (typeof jQuery != "undefined") {
 			textIndent : '0',
 			width: '20px'
 		});
-		jQuery('h1').css('position','relative').append(
+		jQuery('#header h1').css('position','relative').append(
 			$link.clone().bind('click', function(e) {
 				jQuery('body')
 					.removeClass('red')
@@ -59,6 +59,7 @@ if (typeof jQuery != "undefined") {
 				e.preventDefault();
 			}).css('right', '65px')
 		);
+		
 	}
 	
 	/* =DOCUMENT READY

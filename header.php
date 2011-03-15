@@ -71,19 +71,21 @@ $file = $guanes[$i]["file"];
 </head>
 <body>
 <div id="wrapper">
+	<header>
 	<h1>
 		<a href="<?php echo get_option('home'); ?>" title="Página principal del blog <?php bloginfo('name'); ?>">
 			<img src="<?php bloginfo('template_directory'); ?>/images/layout/logo-ce.png" alt="<?php bloginfo('name'); ?>" />
 		</a>
 	</h1>
+	</header>
 	
 	<?php if (!is_404()) { ?>
-	<div id="about">
-		<h2 class="hide">Acerca del autor</h2>
+	<section id="about">
+		<h1 class="hide">Acerca del autor</h1>
 
 		<p>Mi nombre es <strong>Juan G. Hurtado</strong>, y <?= $text ?></p>
 		<img src="<?php bloginfo('template_directory'); ?>/images/content/<?= $file ?>" alt="Juan G. Hurtado, el autor de este blog" />
-	</div>
+	</section>
 	<?php } ?>
 
 	<hr class="hide" />
