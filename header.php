@@ -59,6 +59,9 @@ $file = $guanes[$i]["file"];
 	<!-- /Styles -->
 	
 	<!-- Scripts -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
 	<script>window.jQuery || document.write('<script src="<?php bloginfo('template_directory'); ?>/flaminwork/jquery-1.5.1.min.js">\x3C/script>')</script>
 	<script src="<?php bloginfo('template_directory'); ?>/flaminwork/flaminwork.min.js" type="text/javascript" charset="utf-8"></script>
