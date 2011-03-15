@@ -8,7 +8,7 @@
 	<?php if (!is_404()) { ?>
 	<hr class="hide" />
 	
-	<footer>
+	<footer role="contentinfo">
 		<p id="footer">Publicando bajo <a href="http://www.wordpress.org/" title="Página principal del gestor de contenidos Wordpress">Wordpress</a>, con <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" title="Página sobre la licencia Creative Commons a la que se acoje el blog Colores Efímeros: Reconocimiento-No comercial-Compartir bajo la misma licencia">Reconocimiento-No comercial-Compartir bajo la misma licencia</a></p>
 	</footer>
 	<?php } ?>

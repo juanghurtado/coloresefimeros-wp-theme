@@ -71,7 +71,7 @@ $file = $guanes[$i]["file"];
 </head>
 <body>
 <div id="wrapper">
-	<header>
+	<header role="banner">
 	<h1>
 		<a href="<?php echo get_option('home'); ?>" title="Página principal del blog <?php bloginfo('name'); ?>">
 			<img src="<?php bloginfo('template_directory'); ?>/images/layout/logo-ce.png" alt="<?php bloginfo('name'); ?>" />

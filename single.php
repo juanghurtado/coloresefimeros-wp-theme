@@ -8,10 +8,13 @@ get_header();
 
 ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<?php get_template_part('post'); ?>
-
-		<?php comments_template(); ?>
-
+		<section role="main">
+			<?php get_template_part('post'); ?>
+		</section>
+		
+		<section role="complementary">
+			<?php comments_template(); ?>
+		</section>
 	<?php endwhile; else: ?>
 		<section id="error-404">
 			<h1>No encontrado</h1>

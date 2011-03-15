@@ -14,7 +14,7 @@ get_header();
 			<p class="message">Artículos guardados en la categoría <strong><?php single_cat_title(); ?></strong></p>
 		<?php } ?>
 	
-		<section class="hfeed">
+		<section class="hfeed" role="main">
 		<?php while (have_posts()) : the_post(); ?>
 			<?php get_template_part('post'); ?>
 		<?php endwhile; ?>
