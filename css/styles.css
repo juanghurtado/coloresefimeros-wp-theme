@@ -14,13 +14,37 @@
 /* =GLOBALS
 ---------------------------------------------------------------------------------- */
 body {
-	background: #f1f1f1 url(../images/layout/tile.gif) repeat 0 0;
-	border-top: 5px solid rgba(0,0,0,.75);
+	background: #f1f1f1 url(../images/layout/noise.png) repeat 0 0;
+	border-top: 10px solid rgba(0,0,0,.75);
 	color: rgba(0,0,0,.75);
 	line-height: 1.55;
 	margin: 0;
 	padding: 0;
 	text-shadow: 1px 1px 0 rgba(255,255,255,.8);
+	
+	-webkit-animation-name : bodyanimation;
+	-webkit-animation-iteration-count : infinite;
+	-webkit-animation-timing-function : linear; 
+	-webkit-animation-duration : 30s;
+	-webkit-animation-delay : 0;
+}
+
+@-webkit-keyframes bodyanimation {
+	0% {
+		border-color: rgba(0,0,0,.75);
+	}
+	25% {
+		border-color: #496767;
+	}
+	50% {
+		border-color: #6A220B;
+	}
+	75% {
+		border-color: #B97B2A;
+	}
+	100% {
+		border-color: rgba(0,0,0,.75);
+	}
 }
 
 #wrapper {
