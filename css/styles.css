@@ -123,6 +123,7 @@ code {
 
 pre code {
 	display: block;
+	margin-bottom: 1.5em;
 	overflow: auto;
 	padding: 1em;
 }
