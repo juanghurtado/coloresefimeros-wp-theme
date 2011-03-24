@@ -1,0 +1,3 @@
+[submodule "flaminwork"]
+	path = flaminwork
+	url = git@github.com:juanghurtado/flaminwork.git
