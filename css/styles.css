@@ -447,7 +447,7 @@ li.comment {
 		background: rgba(255,255,255,.25);
 		border: 1px solid rgba(0,0,0,.1);
 		font-size: 1.1em;
-		padding: 0 1.5em;
+		padding: 1em 1.5em 0 1.5em;
 		
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
