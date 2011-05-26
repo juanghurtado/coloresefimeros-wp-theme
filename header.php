@@ -69,6 +69,8 @@ $file = $guanes[$i]["file"];
 	<!-- /Scripts -->
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss2_url'); ?>" />
+	
 	
 	<?php wp_head(); ?>
 </head>
